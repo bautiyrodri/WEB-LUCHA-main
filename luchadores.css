@@ -1,0 +1,38 @@
+body {
+    background: rgb(0, 0, 0);/*bordes*/
+    font-family: Arial rgb(124, 68, 68);
+    color: rgb(199, 2, 2);/*color de letras*/
+}
+
+header {
+    background: linear-gradient(90deg, red, black, red);
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background: #0f0b0b;/*color fondo de todos los luchadores*/
+    border: 2px solid rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border-color: rgb(230, 230, 10);/*color que se activa al presionar*/
+}
+
+.volver {
+  background: #d62828;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.volver:hover {
+  background: #a4161a;
+}

@@ -1,179 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <button onclick="history.back()" class="volver">
-     ⬅ Volver atrás
-    </button>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campeonato 100% Lucha</title>
+    <title>Campeonato 100% Lucha - Historia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="historia.css">
 </head>
-
 <body>
-    <h1>Viloni</h1>
-    <h3>El ídolo absoluto de la zona norte (Ituzaingó). Viloni no solo era un luchador, era el símbolo de la resistencia técnica.
 
-Enemigos: Su archienemigo histórico fue La Masa, con quien disputó el trono de "el más fuerte". También tuvo una rivalidad personal con Vándalo, quien lo atacaba por la espalda en su moto.
+    <header class="sitio-header">
+        <button onclick="history.back()" class="btn-volver">
+            ⬅ Volver atrás
+        </button>
 
-Aliados: Su hermano de armas era Musambe Tutu. También contaba con el apoyo incondicional de Deliver y Fabrizzio Delmonico, con quienes formaba el frente contra los rudos.
+        <div class="dropdown">
+            <button id="menuBtn" class="btn-menu">☰ MENÚ</button>
+            <nav id="navMenu" class="menu-contenido">
+                <ul>
+                    <li><a href="historia.html" class="nav-link">Historia</a></li>
+                    <li><a href="campeonato.html" class="nav-link">Campeonato</a></li>
+                    <li><a href="luchadores.html" class="nav-link">Luchadores</a></li>
+                    <li><a href="juego.html" class="nav-link">Juego</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-Dato de combate: Su resistencia era legendaria; ganaba las luchas cuando parecía que ya no podía levantarse más.</h3>
+    <main class="contenedor-principal">
+        
+        <section class="banner-titulo">
+            <h1>La Historia de <span class="resaltado">100% Lucha</span></h1>
+            <p class="subtitulo">El show que marcó a una generación de campeones</p>
+        </section>
+
+        <article class="contenido-historia">
+            <p class="parrafo-destacado">
+                <strong>100% Lucha</strong> fue un programa argentino de lucha libre que se emitió entre 2006 y 2010. La historia transcurría en una federación de lucha donde distintos competidores se enfrentaban para convertirse en campeones. A diferencia de una competencia deportiva real, cada luchador tenía una personalidad muy marcada: algunos eran héroes que defendían el juego limpio y otros eran villanos que hacían trampas para ganar.
+            </p>
+
+            <p>
+                El protagonista principal era <strong>Vicente Viloni</strong>, considerado el héroe más importante de la federación. Junto a luchadores como La Masa, Mc Floyd y otros aliados, debía enfrentarse constantemente a rivales poderosos como Balut Cuniescu, Gorutta Jones y diversos villanos que buscaban dominar la competición. A lo largo de las temporadas se desarrollaron numerosas rivalidades, traiciones, alianzas y torneos especiales, donde los luchadores competían por campeonatos, trofeos y el reconocimiento del público.
+            </p>
+
+            <blockquote>
+                "¡Por el Honor y por la Gloria!" — El espíritu que movía a los mejores del ring.
+            </blockquote>
+
+            <p>
+                Con el paso de los años fueron apareciendo nuevos personajes y desafíos cada vez más difíciles. Los héroes debían superar obstáculos y derrotar a luchadores que intentaban imponerse mediante la fuerza o las trampas. Mientras tanto, el público seguía las historias como si fueran una serie, ya que cada combate formaba parte de una trama más grande que continuaba semana tras semana.
+            </p>
+
+            <p>
+                La popularidad del programa fue tan grande que incluso se realizó una película, en la que los luchadores debían unirse para enfrentar una amenaza que ponía en peligro a toda la organización de 100% Lucha. Esta expansión ayudó a que los personajes se volvieran aún más conocidos entre los jóvenes de la época.
+            </p>
+
+            <p>
+                Finalmente, en 2010 llegó el cierre de la historia. Uno de los momentos más importantes fue la despedida de Vicente Viloni, quien protagonizó una lucha final contra Balut Cuniescu. Tras vencer a su rival, se retiró y agradeció al público por el apoyo recibido durante todos esos años. Poco después, el programa llegó a su fin y dejó de emitirse.
+            </p>
+
+            <p class="cierre-texto">
+                Aunque terminó hace muchos años, 100% Lucha sigue siendo recordado como uno de los programas más populares de la televisión argentina, gracias a sus personajes carismáticos, sus combates espectaculares y las historias que acompañaron a toda una generación de espectadores.
+            </p>
+        </article>
+
+    </main>
+
+    <script>
+        document.getElementById("menuBtn").addEventListener("click", function(e) {
+            e.stopPropagation();
+            document.getElementById("navMenu").classList.toggle("mostrar");
+        });
+
+        // Cierra el menú si se hace clic en cualquier parte de la pantalla
+        window.addEventListener("click", function(e) {
+            var menu = document.getElementById("navMenu");
+            if (!event.target.matches('#menuBtn') && menu.classList.contains('mostrar')) {
+                menu.classList.remove('mostrar');
+            }
+        });
+    </script>
 </body>
-<body>
-    <h1>Musambe Tutu</h1>
-    <h3>Llegó desde África con una técnica depurada y una agilidad envidiable. Era el "segundo al mando" del bando técnico.
-
-Enemigos: Mc Floyd (quien lo discriminaba y atacaba con su gaita) y Tito Morán.
-
-Aliados: El aliado más fiel de Viloni. Se dice que sin Musambe, Viloni no habría sobrevivido a las emboscadas de los rudos en los vestuarios.
-
-Dato de combate: Su "Cabezazo de Ghana" era letal; decía que su cráneo era tan duro como el diamante.</h3>
-</body>
-
-<body>
-    <h1>La Masa</h1>
-    <h3>Un titán de 150 kilos que sembraba el pánico. Aunque empezó como un villano puro, su popularidad lo llevó a ser un "antihéroe".
-
-Enemigos: Vicente Viloni (su gran obsesión) y Gorutta Jones (disputaban quién era el gigante más dominante).
-
-Aliados: En sus épocas de mayor maldad, fue aliado de Vándalo. Sin embargo, era un lobo solitario que solía traicionar a sus socios si sentía que le robaban el protagonismo.
-
-Dato de combate: Ganaba la mayoría de sus peleas por demolición, utilizando su fuerza bruta para evitar que los técnicos pudieran volar.</h3>
-</body>
-
-<body>
-    <h1>Tito Moran</h1>
-    <h3>Representaba al típico ventajero que no respeta las leyes. Luchaba con pantalones de vestir y tiradores.
-
-Enemigos: Hip Hop Man y todos los luchadores extranjeros (era muy xenófobo en su personaje).
-
-Aliados: Se juntaba con Gorutta Jones para que el gigante hiciera el trabajo sucio mientras él se llevaba la victoria.
-
-Dato de combate: Su especialidad era el "piquete de ojos" y usar las cuerdas para asfixiar al rival.</h3>
-</body>
-
-<body>
-    <h1>Teniente Murphy</h1>
-    <h3>Un ex militar que consideraba que el ring era un campo de batalla y los demás luchadores, reclutas a los que debía "disciplinar". Entraba al ring marchando y con una rigidez absoluta.
-
-Perfil: Rudo disciplinado, autoritario y extremadamente técnico en el combate cuerpo a cuerpo (estilo grappling militar).
-
-Enemigo Mortal: Hip Hop Man. Murphy lo detestaba por su estilo "rebelde" y su música "ruidosa", considerándolo el ejemplo de todo lo que estaba mal con la juventud. También tuvo roces con Viloni por la falta de respeto a las jerarquías.
-
-Aliados: Solía hacer equipo con Tito Morán (la unión de la "ley" y la "viveza criolla") y a veces con Mc Floyd, ya que ambos valoraban la técnica y la frialdad por sobre el espectáculo.</h3>
-</body>
-
-<body>
-    <h1>Hipnotizador</h1>
-    <h3>Llegó de Estados Unidos con una radio al hombro y movimientos de breakdance que usaba para esquivar golpes.
-
-Enemigos: Tito Morán (quien lo consideraba un "payaso extranjero") y El Teniente Murphy.
-
-Aliados: Se llevaba muy bien con Deliver, ya que ambos compartían un estilo de lucha aérea y acrobática.
-
-Dato de combate: Su movimiento final, el "450 Splash", era de los más vistosos de la competencia.</h3>
-</body>
-
-<body>
-    <h1>Mc Floyd</h1>
-    <h3>Un luchador de élite, formado en las mejores escuelas de Europa, pero con un corazón podrido.
-
-Enemigos: Musambe Tutu y Fabrizzio Delmonico (a quien llamaba "nenita").
-
-Aliados: Fiel servidor de Vándalo. A veces se unía a Sir Peter Hunter para formar una alianza de "sangre británica".
-
-Dato de combate: Era el maestro de las llaves. Si Mc Floyd te agarraba un brazo, la lucha probablemente terminaba ahí.</h3>
-</body>
-<body>
-    <h1>La Mosca</h1>
-    <h3>
-Pequeño, veloz y completamente impredecible. La Mosca compensaba su falta de fuerza con una agilidad imposible de seguir. Era amado por el público porque nunca se rendía, incluso contra rivales enormes.
-
-Enemigos: Gorutta Jones, quien constantemente intentaba aplastarlo, y Rot Wailer, que lo perseguía por todo el ring como si fuera una presa.
-
-Aliados: Hip Hop Man y Deliver, ya que compartían el estilo rápido y aéreo.
-
-Dato de combate: Su movimiento más famoso era “El Moscazo”, una plancha desde la tercera cuerda que sorprendía incluso a los gigantes.
-    </h3>
-</body>
-
-<body>
-    <h1>Gorutta Jones</h1>
-    <h3>
-Un monstruo salvaje traído desde la jungla africana. Su fuerza física era aterradora y muchas veces parecía imposible de controlar. Rugía antes de cada combate y atacaba sin pensar.
-
-Enemigos: La Masa, porque ambos querían demostrar quién era el verdadero coloso del ring. También odiaba a Viloni por humillarlo usando velocidad y técnica.
-
-Aliados: Tito Morán, quien manipulaba a Gorutta para usarlo como arma contra los técnicos.
-
-Dato de combate: Su “Garra Gorila” dejaba a los rivales sin respiración y muchas veces terminaba las luchas por nocaut.
-    </h3>
-</body>
-
-<body>
-    <h1>Dorival Santos</h1>
-    <h3>
-El representante brasileño del campeonato. Carismático, fiestero y extremadamente habilidoso, mezclaba lucha libre con movimientos de capoeira.
-
-Enemigos: Mc Floyd, quien despreciaba su estilo “circense”, y Doctor Calambre, que intentó lesionarlo varias veces.
-
-Aliados: Musambe Tutu y Hip Hop Man, formando el grupo de luchadores más acrobáticos de la empresa.
-
-Dato de combate: Su “Patada Carioca” podía conectar desde cualquier ángulo gracias a su increíble flexibilidad.
-    </h3>
-</body>
-
-<body>
-    <h1>Doctor Calambre</h1>
-    <h3>
-Un científico loco obsesionado con experimentar con electricidad y dolor. Llegaba al ring con aparatos extraños y aseguraba que podía “aumentar el poder humano”.
-
-Enemigos: Viloni y Musambe Tutu, quienes siempre intentaban detener sus trampas ilegales.
-
-Aliados: Ofidius y Sodrak, ya que compartían el gusto por el caos y la destrucción.
-
-Dato de combate: Su ataque final era “La Descarga Mortal”, un falso toque eléctrico que dejaba paralizados a sus rivales.
-    </h3>
-</body>
-
-<body>
-    <h1>Ofidius</h1>
-    <h3>
-Misterioso y silencioso, Ofidius se movía como una serpiente dentro del ring. Su presencia intimidaba incluso antes de comenzar el combate.
-
-Enemigos: Teniente Murphy, quien lo consideraba un luchador “deshonorable”, y Hip Hop Man, al que buscaba humillar constantemente.
-
-Aliados: Doctor Calambre y Rot Wailer, formando uno de los tríos más temidos del campeonato.
-
-Dato de combate: Su llave “Abrazo de Boa” era casi imposible de romper y hacía rendirse a la mayoría de los rivales.
-    </h3>
-</body>
-
-<body>
-    <h1>Rot Wailer</h1>
-    <h3>
-Un luchador brutal inspirado en un perro de pelea. Entraba al ring encadenado y atacaba con una agresividad fuera de control.
-
-Enemigos: La Mosca, a quien veía como una presa fácil, y Viloni, que logró derrotarlo limpiamente frente al público.
-
-Aliados: Ofidius y Sodrak, con quienes dominaba las luchas callejeras y combates extremos.
-
-Dato de combate: Su movimiento “Mordida Infernal” consistía en abalanzarse sobre el rival con una lanza devastadora.
-    </h3>
-</body>
-
-<body>
-    <h1>Sodrak</h1>
-    <h3>
-Un guerrero oscuro proveniente de tierras desconocidas. Su personaje estaba rodeado de misterio y muchos aseguraban que practicaba magia negra antes de las peleas.
-
-Enemigos: Vicente Viloni y Musambe Tutu, quienes representaban todo lo opuesto a su filosofía destructiva.
-
-Aliados: Doctor Calambre, Ofidius y Rot Wailer. Entre ellos formaban una alianza casi invencible en los combates grupales.
-
-Dato de combate: Su técnica “Sombra Final” confundía al rival antes de aplicar un poderoso golpe giratorio.
-    </h3>
-</body>
-
-
+</html>
